@@ -15,7 +15,8 @@
             "driveTuning": "Drive/TuningKnob", // unused
             "harvesterTuning": "Harvester/TuningKnob", // unused
             "climberSpeed": "Climber Speed",
-            "launcherSpeed": "mLauncherWindingMotorDefaultSpeed"
+            "launcherSpeed": "mLauncherWindingMotorDefaultSpeed",
+            "blingTest": "mBlingTest"
         },
         //  table maps from networktable key, to per-key webpage refresh.
         //  used when we receive values from networktables.
@@ -99,6 +100,9 @@
             },          
             "/mLauncherWindingMotorCurrentSpeed": function(o, value) {
                 $('#launcherCurrentSpeed').val(value);
+            },
+            "/mBlingTestSwitch": function(o, value) {
+                $('#blingTest').val(value);
             }
 
 
