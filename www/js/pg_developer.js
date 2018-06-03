@@ -180,6 +180,7 @@
                     app.logMsg("unknown checkbox " + id);
                 }
                 var value = $(this).prop("checked");
+                $("#"+ntkey+"Txt").text(value);
                 // app.logMsg("checkbox " + id + ": " + value);
                 app.putValue(ntkey, value);
             });
